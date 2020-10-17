@@ -3,8 +3,6 @@ How to export an Android Studio project as a zip file?
 
 You can Export Project as a zip file
 
-File -> Export to Zip File (was removed)
-
 you can do it : "build.gradle" in root Project
 
 
