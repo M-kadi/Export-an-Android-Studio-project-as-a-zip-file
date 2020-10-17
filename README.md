@@ -1,7 +1,7 @@
 # Export an Android Studio project as a zip file
 How to export an Android Studio project as a zip file?
 
-After upgrade Android Studio 4.1 stable edition
+You can Export Project as a zip file
 
 File -> Export to Zip File (was removed)
 
