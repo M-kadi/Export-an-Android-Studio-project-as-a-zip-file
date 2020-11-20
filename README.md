@@ -88,6 +88,7 @@ task myZipApp(type: Zip) {
 If you want to add “.git” folder to zip file, you must change the “default exclude”
 
 ```
+import org.apache.tools.ant.taskdefs.condition.Os
 import org.apache.tools.ant.DirectoryScanner
 task myZipApp(type: Zip) {
     DirectoryScanner.defaultExcludes.each {       
@@ -116,6 +117,13 @@ task myZipApp(type: Zip) {
 
 
     archiveName  'my_app' + datePart + '---' + timePart + '.zip' 
-    destinationDir(file('E:/versions'))
+    
+    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        destinationDir(file('E:/versions'))
+    }
+    else if (Os.isFamily(Os.FAMILY_MAC)) {
+        destinationDir(file('/Users/Appel/AndroidStudioProjects/prayer_time_versions'))
+    }
+    
 }
 ```
