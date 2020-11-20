@@ -128,7 +128,7 @@ task myZipApp(type: Zip) {
 }
 ```
 
-** My Test : myapp + mylib (Using Git) **
+**My Test : myapp + mylib (Using Git)**
 
 ```
 import org.apache.tools.ant.DirectoryScanner
